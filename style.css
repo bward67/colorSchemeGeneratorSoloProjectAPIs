@@ -1,0 +1,93 @@
+:root {
+  --var-br-main: 4px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", serif;
+  color: #fff;
+  max-width: 800px;
+  display: grid;
+  place-items: center;
+}
+main {
+  background-color: #1f2937;
+  box-shadow: 0 4 11 0 #000000;
+}
+.color-form {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 11px;
+  width: 550px;
+  height: 90px;
+  padding-inline: 11px;
+}
+.color-form > * {
+  height: 34px;
+}
+.color-input {
+  border: 0.5px solid #313131;
+}
+.color-input input {
+  height: 100%;
+}
+.color-select {
+  padding: 0.56em 0.81em;
+  border-radius: var(--var-br-main);
+  background-color: #1f293a;
+  color: #d5d4d8;
+}
+button {
+  border-radius: var(--var-br-main);
+  box-shadow: 0 1 2 0 #000000;
+  padding: 0.56em 0.81em;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 0.75rem;
+}
+.color-scheme-btn {
+  background-color: #3d4b60;
+  color: #ffffff;
+}
+.color-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.color-box {
+  height: 450px;
+  min-width: 110px;
+}
+
+.color-box-one {
+  background-color: blueviolet;
+}
+.color-box-two {
+  background-color: beige;
+}
+.color-box-three {
+  background-color: aqua;
+}
+.color-box-four {
+  background-color: grey;
+}
+.color-box-five {
+  background-color: #f55a5a;
+}
+.color-hex {
+  padding-block: 0.69em;
+  font-size: 0.75rem;
+}

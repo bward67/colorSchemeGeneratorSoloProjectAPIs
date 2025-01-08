@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <main>
+      <form class="color-form" id="color-form">
+        <div class="color-input">
+          <label for="color"></label>
+          <input type="color" id="input-color" />
+        </div>
+        <select name="color-select" id="color-select" class="color-select">
+          <option value="monochrome" id="monochrome">Monochrome</option>
+          <option value="monochrome-dark" id="monochrome-dark">
+            Monochrome Dark
+          </option>
+          <option value="monochrome-light" id="Monochrome-Light">
+            Monochrome-Light
+          </option>
+          <option value="analogic" id="analogic">Analogic</option>
+          <option value="complement" id="complement">Complement</option>
+          <option value="analogic-complement" id="analogic-complement">
+            Analogic-complement
+          </option>
+          <option value="triad" id="triad">Triad</option>
+          <option value="quad" id="quad">Quad</option>
+        </select>
+        <button class="color-scheme-btn" id="color-scheme-btn">
+          Get color scheme
+        </button>
+      </form>
+      <section class="color-container" id="color-container">
+        <!-- we will display these dynamically in JS -->
+        <div class="color">
+          <div class="color-box color-box-one"></div>
+          <div class="color-hex">#F55A5A</div>
+        </div>
+        <div class="color">
+          <div class="color-box color-box-two"></div>
+          <div class="color-hex">#F55A5A</div>
+        </div>
+        <div class="color">
+          <div class="color-box color-box-three"></div>
+          <div class="color-hex">#F55A5A</div>
+        </div>
+        <div class="color">
+          <div class="color-box color-box-four"></div>
+          <div class="color-hex">#F55A5A</div>
+        </div>
+        <div class="color">
+          <div class="color-box color-box-five"></div>
+          <div class="color-hex">#F55A5A</div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
